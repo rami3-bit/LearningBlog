@@ -1,6 +1,6 @@
 body {
 	display: grid;
-
+	font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -8,4 +8,14 @@ header {
 background-size: cover; /* Gör så att bilden täcker hela containern */
   background-position: center;
   height: 300px;
+}
+
+/*nav bar*/
+
+
+ul {
+	display: flex;
+	gap: 1rem;
+	justify-content: end;
+	list-style-type: none;
 }
