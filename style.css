@@ -1,6 +1,7 @@
 body {
 	display: grid;
 	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
 }
 
 header {
@@ -12,10 +13,24 @@ background-size: cover; /* Gör så att bilden täcker hela containern */
 
 /*nav bar*/
 
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
 
 ul {
 	display: flex;
-	gap: 1rem;
-	justify-content: end;
+	justify-content: flex-end;
 	list-style-type: none;
+	gap: 1rem;
+}
+
+/*footer*/
+
+footer p{
+	padding: 0;
+	margin: 0;
 }
