@@ -5,20 +5,43 @@ body {
 	padding: 0;
 }
 
+/*Header*/
+
 header {
-background-image: url('images/software-developer-6521720_640.jpg');
-color: white;
-background-size: cover; /* Gör så att bilden täcker hela containern */
-  background-position: center;
-  height: 300px;
+	background-image: url('images/computer-2788918_640.jpg');
+	color: white;
+	background-size: cover; /* Gör så att bilden täcker hela containern */
+  	background-position: center;
+  	height: 200px;
+
+	display: flex;
+	flex-direction: column; 
+    justify-content: flex-end;
+	padding: 1rem;
 }
 
-header > h1, header > p {
+ header > h1, header > p {
 padding: 0;
 margin: 0;
-font-size: 1rem;
-text-align: b;
+
 }
+
+header > time p {
+	color: white;
+	font-weight: 400;
+}
+
+
+
+h1 {
+	font-size: 1rem;
+	color: rgb(165, 124, 204);
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+}
+
+
 
 /*nav bar*/
 
@@ -35,6 +58,17 @@ ul {
 	justify-content: flex-end;
 	list-style-type: none;
 	gap: 1rem;
+}
+
+/*Articles*/
+article {
+padding: 1rem;
+object-fit: contain;
+}
+	
+article > img {
+	height: 200px;
+	width: 100%;
 }
 
 /*footer*/
