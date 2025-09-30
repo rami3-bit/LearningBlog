@@ -49,9 +49,12 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	font-size: 1rem;
 }
 
-
+nav > div {
+	
+}
 
 ul {
 	display: flex;
@@ -63,12 +66,31 @@ ul {
 /*Articles*/
 article {
 padding: 1rem;
-object-fit: contain;
+
 }
 	
 article > img {
-	height: 200px;
 	width: 100%;
+}
+
+/*view more btn inside of section*/
+
+
+section {
+	margin: 0 auto;
+	
+}
+
+.view-more-btn {
+	border: none;
+	background: none;
+	text-decoration: underline;
+	cursor: pointer;
+	color: black;
+}
+
+.hidden-article {
+	display: none;
 }
 
 /*footer*/
@@ -83,4 +105,12 @@ footer {
 footer p{
 	padding: 0;
 	margin: 0;
+}
+
+/*MediaQuery*/
+
+@media (max-width: 600px) {
+	article > img {
+		
+	}
 }
