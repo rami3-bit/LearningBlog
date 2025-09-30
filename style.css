@@ -81,7 +81,7 @@ section {
 	
 }
 
-.view-more-btn {
+#view-more-btn {
 	border: none;
 	background: none;
 	text-decoration: underline;
@@ -89,7 +89,7 @@ section {
 	color: black;
 }
 
-.hidden-article {
+#hidden-article {
 	display: none;
 }
 
