@@ -1,5 +1,4 @@
 body {
-	display: grid;
 	font-family: 'Courier New', Courier, monospace;
 	margin: 0;
 	padding: 0;
@@ -50,6 +49,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	font-size: 1rem;
+	padding-bottom: 2rem;
 }
 
 nav > div {
@@ -65,7 +65,7 @@ ul {
 
 /*Articles*/
 article {
-padding: 1rem;
+padding: 0;
 
 }
 	
@@ -87,6 +87,7 @@ section {
 	text-decoration: underline;
 	cursor: pointer;
 	color: black;
+	margin: 1rem;
 }
 
 #hidden-article {
@@ -110,8 +111,8 @@ footer p{
 /*MediaQuery*/
 
 @media (max-width: 600px) {
-	article > img {
-		
+	body {
+		text-align: left;
 	}
 }
 
@@ -130,7 +131,6 @@ footer p{
 .blog1 h1 {
 	display: flex;
 	font-size: 2rem;
-	padding: 1rem;
 }
 
 
