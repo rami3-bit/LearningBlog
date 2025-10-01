@@ -7,7 +7,7 @@ body {
 
 /*Header*/
 
-header {
+.index-html-header {
 	background-image: url('images/computer-2788918_640.jpg');
 	color: white;
 	background-size: cover; /* Gör så att bilden täcker hela containern */
@@ -114,3 +114,25 @@ footer p{
 		
 	}
 }
+
+
+/*	----	blog1.html	----		*/
+.blog1 {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+  	background-image: none;
+ 	color: black;
+  	height: 200px;
+	padding: 1rem;
+}
+
+.blog1 h1 {
+	display: flex;
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+
+
+/*	----	about.html	----		*/
