@@ -1,10 +1,11 @@
 
 
 body {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Source Sans Pro", sans-serif;
 	margin: 0;
 	display: grid;
-	background-color: #F1ECE4;
+	background-color: #393e41;
+	color: #d3d0cb;
 }
 
 main > *:not(.index-html-header) {
@@ -12,13 +13,12 @@ main > *:not(.index-html-header) {
 }
 
 .index-html-header a {
-	color: inherit;       /* tar färgen från föräldern */
   	text-decoration: none;
 	font-weight: 700;
 	font-size: 1rem;
-	background-color: rgba(250, 235, 215, 0.6);
+	background-color: #393e41;
 	padding: 1rem;
-	color: black;
+	opacity: 0.9;
 }
 
 /*blog 1 in index.html*/
@@ -34,8 +34,7 @@ main > *:not(.index-html-header) {
 	display: flex;
 	flex-direction: column; 
     justify-content: flex-end;
-	opacity: 1;
-	color: white;
+	
 	padding: 1.5rem;
 }
 
@@ -48,7 +47,6 @@ margin: 0;
 }
 
 header > time p {
-	color: white;
 	font-weight: 400;
 }
 
@@ -64,17 +62,8 @@ h1 {
 	padding: 0;
 }
 
-h2 {
-	color:#141414;
-}
 
-p {
-	color: #505050;
-}
 
-img {
-	width: auto;
-}
 
 
 
@@ -95,9 +84,7 @@ ul {
 }
 
 /*Articles*/
-article {
-padding: 0;
-}
+
 	
 article > img {
 	width: 100%;
@@ -117,7 +104,6 @@ section {
 	background: none;
 	text-decoration: underline;
 	cursor: pointer;
-	color: black;
 	margin: 1rem;
 }
 
@@ -129,10 +115,9 @@ section {
 footer {
 	margin: 0;
 	background-color: grey;
-	color: black;
 	width: 100%;
 	text-align: center;
-	padding: 0;
+	padding: 1rem 0;
 	
 }
 
@@ -180,7 +165,7 @@ img {
 	flex-direction: column;
 	align-content: center;
   	background-image: none;
- 	color: black;
+ 	
   	height: 200px;
 	padding: 1rem;
 }
