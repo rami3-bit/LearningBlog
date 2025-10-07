@@ -3,7 +3,6 @@
 body {
 	font-family: "Source Sans Pro", sans-serif;
 	margin: 0;
-	display: grid;
 	background-color: #393e41;
 	color: #d3d0cb;
 }
@@ -55,12 +54,7 @@ a {
 	color: inherit;
 }
 
-h1 {
-	font-size: 1rem;
-	font-weight: 800;
-	margin: 0;
-	padding: 0;
-}
+
 
 
 
@@ -92,11 +86,7 @@ article > img {
 
 /*view more btn inside of section*/
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #view-more-btn {
 	display: block;
@@ -105,6 +95,7 @@ section {
 	text-decoration: underline;
 	cursor: pointer;
 	margin: 1rem;
+	margin: 0 auto;
 }
 
 #hidden-article {
@@ -130,13 +121,11 @@ footer p{
 
 @media (max-width: 600px) { /*smaller screens*/
 	body {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(1, 1fr);
-		gap: 24px;
+		font-size: 1.5rem;
 		
 		}
 		article {
-		
+			
 		}
 }
 
@@ -167,7 +156,7 @@ img {
   	background-image: none;
  	
   	height: 200px;
-	padding: 1rem;
+	padding: 0;
 }
 
 .blog1 h1 {
@@ -178,3 +167,22 @@ img {
 
 
 /*	----	about.html	----		*/
+
+/*about me section*/
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ddd; /* grå bakgrund som "lucka" */
+  object-fit: cover;
+}
+
+/*recent post*/
+
+.recent-post-about, .recent-post-blog1 {
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+	text-align: center;
+}
