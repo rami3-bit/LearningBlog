@@ -7,36 +7,30 @@ body {
 	color: #d3d0cb;
 }
 
-main > *:not(.index-html-header) {
+main > *:not(.index-html-header), nav {
   padding: 1rem;
 }
 
 .index-html-header a {
   	text-decoration: none;
-	font-weight: 700;
+	padding: 0;
 	font-size: 1rem;
-	background-color: #393e41;
-	padding: 1rem;
-	opacity: 0.9;
+	text-align: left;
 }
 
 /*blog 1 in index.html*/
 
 
 .index-html-header {
-	background-image: url('images/computer-2788918_640.jpg');
+	background-image: url('newImages/blog1.png');
+	background-position: center;
 	color: white;
 	background-size: cover; /* Gör så att bilden täcker hela containern */
-  	background-position: center;
-  	height: 200px;
-	margin-bottom: 4rem;
 	display: flex;
 	flex-direction: column; 
     justify-content: flex-end;
-	
-	padding: 1.5rem;
+	padding: 1rem;
 }
-
 
 
  header > h1, header > p {
@@ -67,7 +61,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 1rem;
+	
 }
 
 ul {
@@ -79,10 +73,7 @@ ul {
 
 /*Articles*/
 
-	
-article > img {
-	width: 100%;
-}
+
 
 /*view more btn inside of section*/
 
@@ -120,31 +111,62 @@ footer p{
 /*MediaQuery*/
 
 @media (max-width: 600px) { /*smaller screens*/
-	body {
-		font-size: 1.5rem;
-		
-		}
-		article {
-			
-		}
+
+
+	img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.index-html-header {
+	background-position: bottom;
+}
+
+
 }
 
 @media (min-width: 600px) { /*medium screens*/
 		main { 
 		display: grid;
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(2, 1fr);
-		gap: 24px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		align-content: center;
+		gap: 1rem;
 	}
 
-img {
-    width: auto;        /* Gör att bilden tar upp 100% av containerns bredd */
-           /* Gör att bilden tar upp 100% av containerns höjd */
-    object-fit: contain;  /* Sträcker ut bilden för att täcka hela container, kan beskära bild */
-	
+#hidden-article {
+	display: block;
 }
-	
-	
+
+.view-more-section {
+		display: none;
+	}
+	.index-html-header {
+
+		
+		background-size: cover;
+		object-fit: cover;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h2, p, time {
+		margin: 0;
+		padding: .5rem;
+	}
+
+	article > img {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+	}
+
+	article {
+		width: 100%;
+	}
 }
 
 
