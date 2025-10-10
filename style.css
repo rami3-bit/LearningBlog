@@ -130,8 +130,8 @@ footer p{
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		grid-template-columns: 1fr 1fr;
-		align-content: center;
 		gap: 1rem;
+		
 	}
 
 #hidden-article {
@@ -149,13 +149,12 @@ footer p{
 	}
 
 	article {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		display: block;
 	}
 	h2, p, time {
 		margin: 0;
 		padding: .5rem;
+		
 	}
 
 	article > img {
